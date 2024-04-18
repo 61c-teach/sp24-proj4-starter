@@ -6,7 +6,7 @@ import sys
 proj_dir_path = Path(__file__).parent.parent
 
 starter_file_hashes = {
-    "Makefile": "ceca1cc2bb4c36aec53da06b86cf1e49",
+    "Makefile": "b3987a39b898e75fdf5b62e91f05c04e",
     "src/compute.h": "2517f5b78999da553924cc3bdc88d661",
     "src/coordinator.h": "66caa337c52639a200cd70bf881abb6b",
     "src/io.h": "eb5b4f402749bdd777a8c50caf01886f",
@@ -16,7 +16,7 @@ starter_file_hashes = {
     "tools/framework.py": "d3204922ea8487702d1dfefc23e8c60a",
     "tools/results_to_gif.py": "990fba3042d1ba07718c0e240f31f14e",
     "tools/run_test.sh": "fd44999a528c848997de2cb07b12b6e9",
-    "tools/staff_tests.py": "78060b4baf17f61354d1741e175aa648",
+    "tools/staff_tests.py": "792e50f07d4d11a96305382e35437674",
 }
 
 def check_hash(rel_path_str):
