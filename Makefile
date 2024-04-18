@@ -5,7 +5,7 @@ CC = mpicc
 else
 CC = gcc
 endif
-CFLAGS = -std=c99 -g -c -Wall
+CFLAGS = -std=c99 -g -c -Wall -O1
 CFLAGS_OPTIMIZE = -fopenmp -mavx -mavx2 -mfma
 LDFLAGS = -fopenmp
 
