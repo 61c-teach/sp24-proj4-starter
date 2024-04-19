@@ -62,6 +62,7 @@ convolve_$(COORDINATOR)_$(COMPUTE): src/compute_$(COMPUTE).o src/coordinator_$(C
 run: | ensure_compute ensure_coordinator ensure_test
 run: convolve_$(COORDINATOR)_$(COMPUTE)
 	@bash tools/run_python.sh tools/create_tests.py $(shell basename $(TEST))
+	@rm -f $(TEST)/*/out.bin
 ifeq ($(COORDINATOR),mpi)
 	@bash tools/run_test.sh mpirun ./convolve_$(COORDINATOR)_$(COMPUTE) $(TEST)/input.txt
 else
